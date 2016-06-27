@@ -15,7 +15,7 @@
         android:text="New Text"
         android:id="@+id/txtShowTitleVideo"
         android:layout_centerHorizontal="true"
-        android:textSize="@dimen/h1"
+        android:textSize="@dimen/h3"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -32,7 +32,8 @@
             android:onClick="clickBackShowVideo"
             android:text="@string/CANCLE"
             android:id="@+id/button2"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="@dimen/h2" />
 
         <Button
             android:layout_width="wrap_content"
@@ -40,7 +41,8 @@
             android:onClick="clickTest"
             android:text="@string/OK"
             android:id="@+id/button3"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="@dimen/h2" />
     </LinearLayout>
 
     <VideoView

@@ -11,7 +11,7 @@
         android:text="@string/title_test"
         android:id="@+id/textView4"
         android:layout_gravity="center_horizontal"
-        android:textSize="@dimen/h1"
+        android:textSize="@dimen/h3"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/status"
@@ -60,7 +60,7 @@
         android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="17sp"
+        android:textSize="@dimen/h1"
         android:textStyle="bold"
         android:text="Stop"
         android:layout_marginLeft="40dp"
@@ -112,7 +112,8 @@
                 android:text="@string/CANCLE"
                 android:id="@+id/button4"
                 android:layout_weight="1"
-                android:onClick="clickBackTest" />
+                android:onClick="clickBackTest"
+                android:textSize="@dimen/h2" />
 
             <Button
                 android:layout_width="0dp"
@@ -120,7 +121,8 @@
                 android:text="@string/bingo"
                 android:id="@+id/button5"
                 android:layout_weight="1"
-                android:onClick="clickShowScore"/>
+                android:onClick="clickShowScore"
+                android:textSize="@dimen/h2" />
         </LinearLayout>
     </RelativeLayout>
 
