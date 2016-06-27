@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg">
+    android:background="@drawable/bb4">
 
     <TextView
         android:layout_width="wrap_content"
@@ -113,7 +113,9 @@
                 android:id="@+id/button4"
                 android:layout_weight="1"
                 android:onClick="clickBackTest"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:background="#ffbbbb"
+                android:textColor="#ffffff" />
 
             <Button
                 android:layout_width="0dp"
@@ -122,7 +124,9 @@
                 android:id="@+id/button5"
                 android:layout_weight="1"
                 android:onClick="clickShowScore"
-                android:textSize="@dimen/h2" />
+                android:textSize="@dimen/h2"
+                android:textColor="#ffffff"
+                android:background="#ff5e00" />
         </LinearLayout>
     </RelativeLayout>
 

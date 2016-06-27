@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/bg">
+    android:background="@drawable/bb7">
 
     <TextView
         android:layout_width="wrap_content"
@@ -33,7 +33,8 @@
             android:text="@string/CANCLE"
             android:id="@+id/button2"
             android:layout_weight="1"
-            android:textSize="@dimen/h2" />
+            android:textSize="@dimen/h2"
+            android:background="#ffbbbb" />
 
         <Button
             android:layout_width="wrap_content"
@@ -42,7 +43,9 @@
             android:text="@string/OK"
             android:id="@+id/button3"
             android:layout_weight="1"
-            android:textSize="@dimen/h2" />
+            android:textSize="@dimen/h2"
+            android:background="#ff5e00"
+            android:textColor="#ffffff" />
     </LinearLayout>
 
     <VideoView
