@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Broadcaster Test</string>
+    <string name="talkname">ขานพระนาม</string>
+    <string name="newtest_male">แบบทดสอบประกาศข่าว ผู้ชาย</string>
+    <string name="newtest_female">แบบทดสอบประกาศข่าว ผู้หญิง</string>
+
+    <string name="title_test">โปรดอ่านข้อความต่อไปนี้</string>
+    <string name="start_test">เริ่มอ่านข้อความได้...</string>
+    <string name="bingo">คะแนนของคุณ</string>
+    <string name="read_score">ประวัติการทดสอบ</string>
+    <string name="head_name">กรุณาใส่ชื่อ ผู้ทดสอบ</string>
+    <string name="dialog_file_found">ไม่สามารถโหลดไฟล์ วีดีโอได้ กรุณารอซักครู่</string>
+    <string name="OK">ตกลง</string>
+    <string name="str_name">ชื่อผู้ทดสอบ</string>
+    <string name="str_your_score">คะแนนของคุณ</string>
+    <string name="str_is">คือ</string>
+    <string name="menu_delete">ลบ</string>
+    <string name="menu_delete_all">ลบทั้งหมด</string>
+    <string name="test_file_found">คุณยังไม่ได้ทำการทดสอบ</string>
+    <string name="sound_bad">คุณภาพเสียงไม่เป็นที่ยอมรับได้ กรุณาทดสอบอีกครั้ง</string>
+    <string name="noti_download">คุณต้องการดาวน์โหลด ไฟล์เสียงเพื่อทำการทดสอบใช่หรือไม่?</string>
+    <string name="CANCLE">ยกเลิก</string>
+    <string name="str_download">คุณต้องการดาวน์โหลด ไฟล์เสียงเพื่อทำการทดสอบใช่หรือไม่?</string>
+</resources>

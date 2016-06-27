@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_test"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/status"
+        android:layout_toEndOf="@+id/status"
+        android:layout_marginTop="10dp" />
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/videoView"
+        android:background="#ffffff"
+        android:layout_gravity="top"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:id="@+id/scrollView"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_gravity="top"-->
+        <!--android:layout_marginTop="1dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="New Text"-->
+                <!--android:id="@+id/textView5"-->
+                <!--android:textSize="@dimen/h2" />-->
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="Stop"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/videoView" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/status"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <!--<norapol.saowarak.narubeth.rmutr.broadcastertest.SoundLevelView-->
+            <!--android:id="@+id/volume"-->
+            <!--android:layout_width="230sp"-->
+            <!--android:layout_height="30sp"-->
+
+            <!--android:layout_gravity="left|center_vertical"-->
+            <!--android:layout_marginLeft="180dp" />-->
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageButton"
+            android:background="@drawable/red1"
+            android:layout_marginLeft="70dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/CANCLE"
+                android:id="@+id/button4"
+                android:layout_weight="1"
+                android:onClick="clickBackTest" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bingo"
+                android:id="@+id/button5"
+                android:layout_weight="1"
+                android:onClick="clickShowScore"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
