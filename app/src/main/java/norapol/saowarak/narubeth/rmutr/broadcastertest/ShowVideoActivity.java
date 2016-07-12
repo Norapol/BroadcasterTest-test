@@ -16,6 +16,7 @@ import android.widget.VideoView;
 
 import java.io.File;
 
+import norapol.saowarak.narubeth.rmutr.broadcastertest.utility.SessionManager;
 import norapol.saowarak.narubeth.rmutr.broadcastertest.utility.Utility;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -26,6 +27,7 @@ public class ShowVideoActivity extends AppCompatActivity {
     private VideoView showVideoView;
     private String strTitle, detailString;
     private String fileName;
+    private SessionManager sessionManager;
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -83,7 +85,24 @@ public class ShowVideoActivity extends AppCompatActivity {
 
         detailString = getIntent().getStringExtra("Detail");
 
-        showDialogName();
+
+        sessionManager = new SessionManager(getApplicationContext());
+        String strName = sessionManager.getUserInformation();
+
+        if (strName.isEmpty()) {
+
+            showDialogName();
+
+        } else {
+
+            Intent intent = new Intent(ShowVideoActivity.this, TestActivity.class);
+            intent.putExtra("Title", strTitle);
+            intent.putExtra("Detail", detailString);
+            intent.putExtra("Name", strName);
+            intent.putExtra("Video", fileName);
+            startActivity(intent);
+
+        }
 
 //        Intent intent = new Intent(ShowVideoActivity.this, NameActivity.class);
 //        intent.putExtra("Title", strTitle);
@@ -103,7 +122,7 @@ public class ShowVideoActivity extends AppCompatActivity {
         final EditText username = (EditText) view.findViewById(R.id.username);
 
         builder.setTitle("กรุณากรอกชื่อของคุณ");
-        builder.setPositiveButton("ตกลง", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Login", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // Check username password
@@ -111,6 +130,9 @@ public class ShowVideoActivity extends AppCompatActivity {
                 String strName = username.getText().toString();
 
                 if (!strName.isEmpty()) {
+
+                    sessionManager.createUserInformation(strName);
+
                     Intent intent = new Intent(ShowVideoActivity.this, TestActivity.class);
                     intent.putExtra("Title", strTitle);
                     intent.putExtra("Detail", detailString);
@@ -126,7 +148,7 @@ public class ShowVideoActivity extends AppCompatActivity {
 
             }
         });
-        builder.setNegativeButton("ยกเลิก", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
